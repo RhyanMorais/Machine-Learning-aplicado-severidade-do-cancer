@@ -6,6 +6,7 @@ This project applies classical machine learning techniques to analyze factors as
 
 Identify and evaluate how demographic, behavioral, environmental and clinical variables relate to cancer severity, using supervised machine learning models for both classification and regression tasks.
 
+
 ## Dataset
 
 The dataset contains patient information such as:
@@ -19,6 +20,12 @@ The dataset contains patient information such as:
 - Survival time  
 
 The target variable represents cancer severity, originally defined as a continuous severity score. This variable was used directly for regression models and discretized into three severity levels (low, moderate and severe) for classification tasks.
+
+## Exploratory Data Analysis
+
+Exploratory Data Analysis was conducted to understand the structure, distribution and relationships within the dataset. The target variable showed a consistent distribution after discretization into three severity levels. Behavioral and environmental variables such as smoking, genetic risk, air pollution, alcohol use and obesity demonstrated a clear association with increasing cancer severity.
+
+Correlation analysis using Spearman’s method supported the selection of these features for model training. No critical missing data issues were identified, and observed outliers were considered plausible within a clinical context. The insights obtained during EDA guided feature selection and model choice in subsequent stages of the analysis.
 
 ## Approach
 
@@ -85,3 +92,15 @@ Feature selection analysis identified smoking, genetic risk, air pollution, alco
 The results indicate that regression-based approaches were more effective than classification models for predicting cancer severity in this dataset. Linear Regression stood out as the best-performing model due to its simplicity, stability and interpretability.
 
 The proposed approach demonstrates potential applicability in clinical triage scenarios, supporting severity estimation and treatment prioritization. A key limitation is the inclusion of treatment cost as a feature, which occurs after severity assessment and may introduce bias. Future work should address this issue and explore additional validation strategies.
+
+How to Run
+
+Install dependencies:
+
+pip install -r requirements.txt
+
+Open the notebook:
+
+02_machine_learning_cancer_severity_analysis_2015_2024.ipynb
+
+You can run it locally or directly in Google Colab using the Open in Colab button.
