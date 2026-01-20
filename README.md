@@ -40,3 +40,9 @@ The project evaluates model performance and discusses which features contribute 
 Install dependencies:
 ```bash
 pip install -r requirements.txt
+```
+Open the notebook:
+
+02_machine_learning_cancer_severity_analysis_2015_2024.ipynb
+
+You can run it locally or directly in Google Colab using the Open in Colab button.
