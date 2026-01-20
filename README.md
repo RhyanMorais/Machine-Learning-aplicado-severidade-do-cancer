@@ -6,7 +6,6 @@ This project applies classical machine learning techniques to analyze factors as
 
 Identify and evaluate how demographic, behavioral, environmental and clinical variables relate to cancer severity, using supervised machine learning models for both classification and regression tasks.
 
-
 ## Dataset
 
 The dataset contains patient information such as:
@@ -20,6 +19,9 @@ The dataset contains patient information such as:
 - Survival time  
 
 The target variable represents cancer severity, originally defined as a continuous severity score. This variable was used directly for regression models and discretized into three severity levels (low, moderate and severe) for classification tasks.
+
+The dataset used in this project is publicly available and can be accessed at:
+https://www.kaggle.com/datasets/zahidmughal2343/global-cancer-patients-2015-2024
 
 ## Exploratory Data Analysis
 
